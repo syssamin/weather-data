@@ -135,4 +135,4 @@ def get_weather(city_name):
 
 if __name__ == "__main__":
         city = input("Enter a city or country name: ")
-        get_weather(cit
+        get_weather(city)
