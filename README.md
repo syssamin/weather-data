@@ -4,26 +4,45 @@ A simple command-line weather app built with Python.
 
 This is one of my first Python projects. I built it to practice working with APIs, handling JSON responses, and fetching data from external services.
 
-Just enter a city name, and the program will show you its current weather information!
+Enter a city or country name, and the program will show you its current weather information!
 
 ## ✨ Features
 
 - 🌍 **City Search** — Search for cities around the world.
+- 🏳️ **Country Detection** — Automatically recognizes country names.
+- 📍 **Capital Lookup** — If you enter a country, it automatically finds its capital and checks the weather there.
 - 🌡️ **Temperature** — Get the current temperature in Celsius.
 - 🥵 **Feels Like** — Check how warm or cold it actually feels.
 - 💧 **Humidity** — View the current humidity percentage.
 - 💨 **Wind Speed** — Check the current wind speed in km/h.
-- 📍 **Geocoding** — Automatically finds a city's geographical coordinates.
 
 ## 👀 Preview
 
+**Searching for a country:**
+
 ```text
-Enter a city name: Dhaka
+Enter a city or country name: Bangladesh
+
+Bangladesh is a country.
+The capital city is Dhaka.
 
 Weather in Dhaka, Bangladesh:
-Temperature: 28.5°C (Feels like 31.2)°C
-Humidity: 75%
-Wind Speed: 12.4 km/h
+Temperature: 24.0°C
+Feels like: 27.5°C
+Humidity: 88%
+Wind Speed: 9.7 km/h
+```
+
+**Searching for a city:**
+
+```text
+Enter a city or country name: Dhaka
+
+Weather in Dhaka, Bangladesh:
+Temperature: 24.0°C
+Feels like: 27.5°C
+Humidity: 88%
+Wind Speed: 9.7 km/h
 ```
 
 *Example output. Actual weather values may vary.*
@@ -33,6 +52,7 @@ Wind Speed: 12.4 km/h
 - 🐍 Python
 - 📦 Requests
 - 🌐 Open-Meteo API
+- 🌍 CountriesNow API
 
 ## 🚀 Getting Started
 
@@ -62,14 +82,15 @@ pip install requests
 python main.py
 ```
 
-That's it! Enter a city name and get its current weather. 🌦️
+Enter a city or country name and get its current weather!
 
 ## 🌐 APIs Used
 
-This project uses two APIs from [Open-Meteo](https://open-meteo.com/):
+This project uses the following APIs:
 
-- 📍 [Geocoding API](https://open-meteo.com/en/docs/geocoding-api) — Finds the latitude and longitude of a city.
-- 🌤️ [Weather Forecast API](https://open-meteo.com/en/docs) — Retrieves current weather information.
+- 📍 [Open-Meteo Geocoding API](https://open-meteo.com/en/docs/geocoding-api) — Finds the geographical coordinates of a city.
+- 🌤️ [Open-Meteo Weather API](https://open-meteo.com/en/docs) — Retrieves current weather information.
+- 🏳️ [CountriesNow API](https://countriesnow.space/) — Identifies countries and retrieves their capital cities.
 
 ## 🔮 What's Next?
 
