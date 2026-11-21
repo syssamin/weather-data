@@ -127,20 +127,12 @@ def get_weather(city_name):
     current = weather_data["current"]
 
     print(f"\nWeather in {full_name}:")
-
-    # Display the current temperature in Celsius.
     print(f"Temperature: {current['temperature_2m']}°C")
-
-    # Display the feels-like temperature.
     print(f"Feels like: {current['apparent_temperature']}°C")
-
-    # Display relative humidity as a percentage.
     print(f"Humidity: {current['relative_humidity_2m']}%")
-
-    # Display wind speed in kilometres per hour.
     print(f"Wind Speed: {current['wind_speed_10m']} km/h")
 
 
 if __name__ == "__main__":
         city = input("Enter a city or country name: ")
-        get_weather(city)
+        get_weather(cit
